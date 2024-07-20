@@ -1,3 +1,13 @@
-Hello world, I'm 1emank, I'm learning to code in Java and Python. For databases, desktop applications and a bit of Android. I’m not looking to collaborate on anything in particular, but I'd like to.
+# 1emank
+Hi, I'm Carlos and I'm learning to code with Python, Java and C, for desktop applications, databases and a bit of Android.
 
-I'm not sure what will be my focus, but I like videogames and it's likely that I'd do a some game at some point. You can send me an e-mail to: carlos.a.gb95@gmail.com
+Repositories:
+- ./scripts - Small shell programs and utilities (.sh)
+- ./snippets - Multipurpose samples of code (Multilanguage)
+- ./strool - Python module for strings with boolean controls
+
+Future:
+- StoFact - Stock and billing (Java)
+- Charliepad - Console text editor (C)
+
+### For any matter write me to: carlos.a.gb95@gmail.com
