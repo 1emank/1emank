@@ -5,6 +5,7 @@ Repositories:
 - ./scripts - Small shell programs and utilities (.sh)
 - ./snippets - Multipurpose samples of code (Multilanguage)
 - ./strool - Python module for strings with boolean controls
+- ./files - Miscellaneous files of different projects
 
 Future:
 - StoFact - Stock and billing (Java)
