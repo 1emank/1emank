@@ -1,5 +1,5 @@
 # 1emank
-Hi, I'm Carlos and I'm learning to code with Python, Java and C, for desktop applications, databases and a bit of Android.
+Hi, I'm Carlos and I'm learning to code with Python, Java and C, for desktop applications, databases and a bit of Android. My interest in programming comes in big part beause I've always been a gamer, so even though it's not my priority, I wouldn't discard working on, or collaborating in the creation of games.
 
 Repositories:
 - ./scripts - Small shell programs and utilities (.sh)
