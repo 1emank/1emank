@@ -1,3 +1,11 @@
-git_c="$(dirname "$(realpath "$0")")"
+origin="$(pwd)"
+root="$(dirname "$(realpath "$0")")"
 
-git submodule add git@github.com:1emank/dotfiles.git dotfiles
+cd "$root" || exit 1
+
+git submodule status | grep -q '^-' >/dev/null &&
+        git submodule update --init
+
+git --work-tree="$HOME" --git-dir=dotfiles/.git checkout
+
+cd "$origin" || exit 1
