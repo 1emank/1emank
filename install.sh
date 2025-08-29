@@ -1,11 +1,22 @@
+set -e
+
 origin="$(pwd)"
 root="$(dirname "$(realpath "$0")")"
 
 cd "$root" || exit 1
 
-git submodule status | grep -q '^-' >/dev/null &&
-        git submodule update --init
+rm -rf dotfiles/.* dotfiles/* || true
 
-git --work-tree="$HOME" --git-dir=dotfiles/.git checkout
+git clone --bare git@github.com:1emank/dotfiles.git dotfiles
+
+git --work-tree="$HOME" --git-dir="${root}/dotfiles" checkout --force
+
+! alias dof >/dev/null 2>&1 && cat <<EOF >> ~/.bashrc
+
+dotfiles(){
+    git --git-dir="${root}/dotfiles/" "--work-tree=$HOME" "\$@"
+}
+alias dof=dotfiles
+EOF
 
 cd "$origin" || exit 1
