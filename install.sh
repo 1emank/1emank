@@ -8,13 +8,13 @@ cd "$root" || exit 1
 rm -rf dotfiles/.* dotfiles/* || true
 
 git clone --bare git@github.com:1emank/dotfiles.git dotfiles
-
 git --work-tree="$HOME" --git-dir="${root}/dotfiles" checkout --force
 
-! alias dof >/dev/null 2>&1 && cat <<EOF >> ~/.bashrc
+cat ~/.bashrc | grep '^alias dof=' >/dev/null || cat <<EOF >> ~/.bashrc
 
-dotfiles(){
-    git --git-dir="${root}/dotfiles/" "--work-tree=$HOME" "\$@"
+dotfiles() {
+        git     --git-dir="${root}/dotfiles/" \\
+                --work-tree="$HOME" "\$@"
 }
 alias dof=dotfiles
 EOF
