@@ -7,15 +7,9 @@ Although I'm learning programming to find a good job, I've always been
 interested in videogames, so I'll probably work in one eventually.
 Professionaly or as a hobby.
 
-In this personal repo, you can see `dotfiles` which is a git submodule
-containing some of my config files, and `install.sh` a script that installs
-those files. Namely:
-
-- .bashrc
-- .bash_profile
-- .config/nvim
-- .config/stylua.toml
-- .tmux.conf
+In this personal repo, there's not much yet, but you can go to
+[my dotfiles](https://github.com/orgs/1emank-dotfiles/repositories)
+to see some things of my setup.
 
 ---
 For any matter contact me at: dev.1emank@gmail.com
